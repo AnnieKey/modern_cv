@@ -32,7 +32,7 @@
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 \usepackage{textcomp}
 \usepackage{multicol}
-\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage[scale=0.85]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -52,9 +52,9 @@
 \email{anastasiakovalyshyn@gmail.com}
 \homepage{linkedin.com/in/anastasia-maria-kovalyshyn}{linkedin.com/in/anastasia-maria-kovalyshyn} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 \extrainfo{Skype: anastasiakovalyshyn}
-\photo[70pt][0.4pt]{pictures/picture2} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\photo[90pt][0.4pt]{pictures/picture2} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 \quote{"Sarcasm is one of the many services I offer" - Habeeb Akande}
-
+\renewcommand\labelitemi{-~}
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -94,7 +94,8 @@
 
 \section{About me}
 
-I love minimalism.
+I love minimalism and simplicity in everything, first of all in the code. A little bit stubborn, but it gives me inspiration to make my ideas and projects real. I am an enthusiastic, self-motivated, responsible and hard working person, well organized and always plan ahead to make sure I manage my time well. 
+A girl with huge ambitions and a desire to make world around me more comfortable for others, and for me of course :)
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -102,7 +103,7 @@ I love minimalism.
 
 \section{Education}
 
-\cventry{2003--2014}{Student}{School \textnumero26}{Obroshyno}{}{Golden Medal}  % Arguments not required can be left empty
+% \cventry{2003--2014}{Student}{School \textnumero26}{Obroshyno}{}{Golden Medal}  % Arguments not required can be left empty
 \cventry{2015--2019}{Bachelor in Computer Science}{Lviv National Polytechnic University}{Lviv}{}{Specialized in automated control systems}
 
 % \section{Masters Thesis}
@@ -118,7 +119,7 @@ I love minimalism.
 \section{Publications}
 
 \cvitem{2019}{Spatial orientation based on sensor network bi-planar triangulation, NULP}
-\cvitem{2018}{Erasmus Programme exchange categoirzation and evaluation algorithm, NULP}
+\cvitem{2018}{Erasmus Programme automated exchange categoirzation and evaluation, NULP}
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
@@ -129,8 +130,7 @@ I love minimalism.
 \subsection{Programming Languages / Technologies}
 \begin{multicols}{3}
 \begin{itemize}
-\item Python; \item Bash; \item C; 
-\item C++; \item JavaScript; \item HTML / CSS;
+\item Python; \item Bash; \item C/C++; \item JavaScript; \item HTML / CSS;
 \end{itemize}
 \end{multicols}
 \subsection{RDBMS}
@@ -146,10 +146,10 @@ I love minimalism.
 \end{itemize}
 \end{multicols}
 \subsection{Development Tools}
-\begin{multicols}{3}
+\begin{multicols}{2}
 \begin{itemize}
 \item git; \item InteliJ IDEA (PyCharm); \item Visual Studio 15;
-\item Microsoft Visio; \item Source Tree / Tortoise; \item google.com;
+\item google.com;
 \end{itemize}
 \end{multicols}
 \subsection{Operating Systems}
@@ -188,7 +188,6 @@ I love minimalism.
 \cvitemwithcomment{Ukrainian}{Native}{}
 \cvitemwithcomment{Russian}{Second native}{}
 \cvitemwithcomment{English}{Upper Intermediate}{Can chat relatively good, though it stil sounds a bit corky.}
-\cvitemwithcomment{Czech}{Basic}{Can understand most of the topics. With luck.}
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
@@ -201,6 +200,7 @@ I love minimalism.
 \begin{itemize}
 
 \item Space \item Travelling \item Stargazing
+\item Cinematograph \item Comics \item Chess
 \end{itemize}
 \end{multicols}
 % \cvlistdoubleitem{Piano}{Chess}
