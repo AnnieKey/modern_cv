@@ -7,7 +7,7 @@
 
 
 \documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
+\usepackage{enumitem}
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -19,7 +19,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.89]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 % \setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 \usepackage{multicol}
@@ -63,14 +63,16 @@
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
 \section{Publications}
-\cvitem{2019}{\emph{Spatial orientation based on sensor network bi-planar triangulation, NULP}}
-\cvitem{2018}{\emph{Erasmus Programme exchange automated categoirzation and evaluation, NULP}}
+\cvitem{2019}{\emph{Spatial orientation based on sensor network bi-planar triangulation, NULP.}}
+\cvitem{2018}{\emph{Erasmus Programme exchange automated categoirzation and evaluation, NULP.}}
 %\cvitem{supervisors}{Supervisors}
 %\cvitem{description}{Short thesis abstract}
 \section{Skillset}
 
 \subsection{Programming languages / Technologies}
-\begin{itemize}
+\setlist[itemize]{topsep=0pt}
+
+\begin{itemize}\setlength{\itemsep}{-5pt}%
 \begin{multicols}{2}
 \item Python
 \item Scala 
@@ -78,19 +80,24 @@
 \end{multicols}
 \end{itemize}
 
+\vspace{-15pt}
+
 \subsection{Libraries and Frameworks}
+\vspace{-10pt}
 \begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}\setlength{\itemsep}{-5pt}%
 \item Boto3
 \item Apache Spark
 \item Apache Akka
 \item Django
 \end{itemize}
 \end{multicols}
+\vspace{-10pt}
 
 \subsection{ETL Toolkit}
+\vspace{-10pt}
 \begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}\setlength{\itemsep}{-5pt}%
 \item Apache Airflow
 \item Apache Nifi
 \item Apache Kafka
@@ -100,31 +107,35 @@
 \end{itemize}
 \end{multicols}
 
-\newpage
+
+\vspace{-10pt}
 \subsection{Cloud Computing}
+\vspace{-10pt}
 \begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}\setlength{\itemsep}{-5pt}%
 \item AWS S3
 \item AWS Kinesis
 \item GCP Cloud Storage
 \item GCP PubSub
 \end{itemize}
 \end{multicols}
-
+\newpage
 \subsection{RDBMS}
+\vspace{-10pt}
 \begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}\setlength{\itemsep}{-5pt}%
 \item SqlLite
 \item PostgreSql
 \end{itemize}
 \end{multicols}
-
+\vspace{-10pt}
 % \newpage
 
 
 \subsection{Development tools}
+\vspace{-10pt}
 \begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}\setlength{\itemsep}{-5pt}%
 \item IntelliJ IDEA
 \item Pycharm Community
 \item Git 
@@ -134,25 +145,27 @@
 \end{itemize}
 \end{multicols}
 
-
+\vspace{-10pt}
 \subsection{Operating systems}
+\vspace{-10pt}
 \begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}\setlength{\itemsep}{-5pt}%
 \item Ubuntu 18.04 
 \item Fedora 28
 \item Windows 10
 \end{itemize}
 \end{multicols}
-
+\vspace{-10pt}
 \subsection{Methodologies}
+\vspace{-10pt}
 \begin{multicols}{2}
-\begin{itemize}
+\begin{itemize}\setlength{\itemsep}{-5pt}%
 \item SCRUM
 \item Kanban 
 \end{itemize}
 \end{multicols}
 
-
+\vspace{-10pt}
 %   %\cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
 % \end{cvcolumns}
 
@@ -172,10 +185,10 @@
 
 \section{Experience}
 \subsection{Vocational}
-\cventry{May 2019 -- present}{Trainee, Junior Big Data Engineer}{Sigma Software}{Lviv}{}{
+\cventry{Aug 2019 -- present}{Trainee, Junior Big Data Engineer}{Sigma Software}{Lviv}{}{
 \textsc{OpenSky processing application}
 \newline
-\textbf{Duration}: 2 months.
+\textbf{Duration}: 5 months.
 \newline
 \textbf{Technologies}: Scala, Apache Akka, Apache Kafka.
 \newline
@@ -184,10 +197,10 @@
 \textbf{Description}: Developed application using Scala programming language, Akka framework and Apache Kafka. Application was created to ingest data, transform it into JSON, calculate specific data (number of airplanes around pre-defined set of airports whithin pre-defined range) in batch of the data for the particular time window and write transformed data into Kafka. Created REST API of the application to make results available for reading.
 }
 
-\cventry{}{}{}{}{}{
+\cventry{May 2019 -- Aug 2019}{Trainee Big Data Engineer}{Sigma Software}{Lviv}{}{
 \textsc{Multi-cloud ETL platform}
 \newline
-\textbf{Duration}: 1 month.
+\textbf{Duration}: 4 months.
 \newline
 \textbf{Technologies}: Python, Boto3 (Azure/GCP CDK for Python), Apache Airflow.
 \newline
@@ -196,7 +209,7 @@
 \textbf{Description}: Developed ETL pipeline that operates in three clouds (AWS, GCP, Azure). Pipeline ingests data from generated files, converts it into JSON, moves over FS.
 }
 
-\cventry{2016--2018}{Freelance}{LPNU}{Lviv}{}{Was trying to find myself in different branches. Attended Python web development (full-stack) courses.  Had my own projects, though all of them were somewhat connected to LNPU.}
+\cventry{2016 -- April 2019}{Freelance}{LPNU}{Lviv}{}{Was trying to find myself in different branches. Attended Python web development (full-stack) courses.  Had my own projects, though all of them were somewhat connected to LNPU.}
 \subsection{Miscellaneous}
 \cventry{2015--2018}{Math Tutor}{}{Lviv}{}{Had my time with kids and teenagers helping them master math and succeed with the External Evaluation and the Governmental Exams.}
 \end{document}

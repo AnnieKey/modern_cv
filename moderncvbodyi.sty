@@ -66,14 +66,14 @@
 \settoheight{\baseletterheight}{\sectionstyle{o}}
 \setlength{\baseletterheight}{\baseletterheight-0.95ex}
 \RenewDocumentCommand{\section}{sm}{%
-  \par\addvspace{2.5ex}%
+  \par\addvspace{1.5ex}%
   \phantomsection{}% reset the anchor for hyperrefs
   \addcontentsline{toc}{section}{#2}%
   \cvitem[0ex]{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{0.95ex}}}{\strut\sectionstyle{#2}}%
   \par\nobreak\addvspace{1ex}\@afterheading}% to avoid a pagebreak after the heading
 
 \RenewDocumentCommand{\subsection}{sm}{%
-  \par\addvspace{1ex}%
+  \par\addvspace{0.5ex}%
   \phantomsection{}% reset the anchor for hyperrefs
   \addcontentsline{toc}{subsection}{#2}%
   \cvitem[0ex]{}{\strut\subsectionstyle{#2}}%
@@ -107,9 +107,9 @@
   \cvitem[#1]{#2}{%
     {\bfseries#3}%
     \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
-    \ifthenelse{\equal{#5}{}}{}{, #5}%
-    \ifthenelse{\equal{#6}{}}{}{, #6}%
-    .\strut%
+    \ifthenelse{\equal{#5}{}}{}{, #5}.%
+    \ifthenelse{\equal{#6}{}}{}{ #6}%
+    \strut%
     \ifx&#7&%
     \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
 
